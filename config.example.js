@@ -11,7 +11,7 @@ config = {
     // When running Ghost in the wild, use the production environment.
     // Configure your URL and mail settings here
     production: {
-        url: 'http://my-ghost-blog.com',
+        url: 'http://blog.jfantasy.org',
         mail: {},
         database: {
             client: 'mysql',
@@ -27,6 +27,12 @@ config = {
         server: {
             host: '0.0.0.0',
             port: '2368'
+        },
+
+        // #### Paths
+        // Specify where your content directory lives
+        paths: {
+            contentPath: path.join(process.env.GHOST_CONTENT, '/')
         }
     },
 
