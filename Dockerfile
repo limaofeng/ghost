@@ -20,7 +20,7 @@ RUN arch="$(dpkg --print-architecture)" \
 ENV GHOST_SOURCE /usr/src/ghost
 WORKDIR $GHOST_SOURCE
 
-ENV GHOST_VERSION 0.11.1
+ENV GHOST_VERSION 0.11.2
 
 RUN buildDeps=' \
 		gcc \
